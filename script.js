@@ -14,11 +14,12 @@ branch: document.getElementById("branch").value,
 event: document.getElementById("event").value
 };
 
+console.log(data)
 try {
 
-const res = await fetch("http://localhost:5000/register", {
+const res = await fetch("http://localhost:8080/register", {
 method: "POST",
-headers: { "Content-Type": "application/json" },
+headers: { "Content-Type": "application/json"},
 body: JSON.stringify(data)
 });
 
@@ -30,6 +31,7 @@ form.reset();
 } catch (error) {
 
 successMessage.innerText = "❌ Server Error!";
+console.log(error);
 
 }
 
