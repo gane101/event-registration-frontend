@@ -10,7 +10,8 @@ app.use(cors({
   origin: [
     "http://127.0.0.1:8080",
     "http://127.0.0.1:8000",
-    "https://YOUR-NETLIFY-LINK.netlify.app"
+    "https://YOUR-NETLIFY-LINK.netlify.app",
+    "https://eloquent-kringle-221b2d.netlify.app"
   ],
   // origin: "*",  // ← Temporary: allows ALL origins
   methods: ["GET", "POST", "OPTIONS"],
