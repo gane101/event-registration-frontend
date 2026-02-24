@@ -17,7 +17,7 @@ event: document.getElementById("event").value
 console.log(data)
 try {
 
-const res = await fetch("https://event-registration-frontend-3yj5.onrender.com/", {
+const res = await fetch("https://event-registration-frontend-3yj5.onrender.com/register", {
 method: "POST",
 headers: { "Content-Type": "application/json"},
 body: JSON.stringify(data)
